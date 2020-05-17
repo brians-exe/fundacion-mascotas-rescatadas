@@ -1,0 +1,1017 @@
+﻿@charset "utf-8";
+
+*{
+    font-family: 'Nunito', sans-serif;
+    /*
+    border-style: solid;
+    border-width: 1px;
+    */
+}
+body{
+    margin: 0;
+    background: #fff4f0;
+    width: 100%;
+    
+    background-image: url(../img/background/fondo.jpeg);
+    position: relative;
+    
+}
+
+body:before{
+    content: '';
+    position: absolute;
+    background-color: rgba( 0, 0, 0, 0.3 );
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/*------------------------- HEADER ------------------------------------*/
+
+#encabezado{
+    width: 100wh;
+    
+    background-image: url(../img/header/encabezado2.jpg);
+    padding: 40px 100px;
+    text-align: center;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-bottom: #000 solid 4px;
+}
+
+.title-encabezado{
+    text-transform: uppercase;
+    font-size: 4em;
+    font-family: 'Fredoka One', cursive;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 4px #000;
+    color: #fff;
+    position: relative;
+}
+#encabezado:before{
+    content: '';
+    position: absolute;
+    background-color: rgba( 0, 0, 0, 0.4 );
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/*------------------------- NAV -----------------------------------------*/
+
+.nav-bar{
+    width: 100%;
+    height: 3.2em;
+    background: #ff9770;
+    position: relative;
+    
+        /*#f9ba76*/
+}
+.nav-bar ul {
+  list-style-type: none;
+  margin: auto auto auto 1em;
+  padding: 0;
+}
+.nav-bar ul li{
+    float: left
+}
+.nav-bar ul li a {
+    display: inline-block;
+    padding: 11px;
+    text-align: center;
+    text-decoration: none;
+    color: ghostwhite;
+    font-size: 1.3em
+}
+.nav-bar ul li a:hover{
+    color: #000;
+    cursor: pointer
+}
+.enlaces:hover{
+    background: #ffab8c
+}
+.busc-conten{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buscar-text{
+    display: inline-block;
+    border-radius: 40px;
+    font-size: 1em;
+    padding: 0 0.5em
+}
+.buscar-text:focus{
+    outline: none;
+    border: 2px solid grey;
+}
+.buscar-boton{
+    width: 1em;
+    display: inline-block;
+    color: #fff;
+    font-size: 100%
+}
+
+/*----------------------------------- SECTION NOTICIAS ------------------------------------*/
+
+.noticias{
+    width: 80%;
+    margin: 50px auto 30px auto;
+    padding: 10px;
+    background: #fff;
+    border: solid 0.5px #bfc0c0;
+    position: relative;
+}
+.noticias h2{
+    width: 90%;
+    margin: 20px auto;
+    padding: 0.3em;
+    text-align: center;
+    border-bottom: solid 0.2em #ff9770;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em
+}
+.noticias table{
+    margin: 20px auto;
+}
+
+.noticias table tr{
+    display: flex;
+    box-shadow: 1px 1px 5px #000;
+    margin: 30px auto
+}
+.noticias table tr td{
+    display: flex;
+    padding: 15px
+}
+
+.noticias table tr td img, .noticias table tr td div{
+    display: inline-block;
+}
+.noticias table tr td img{
+    width: 20vw;
+}
+.noticias table tr td div{
+    width: 40vw;
+}
+.noticias table tr td div h6{
+    margin: 20px;
+    text-align: left;
+    font-size: 100%;
+    font-weight: 500;
+    font-style: italic 
+}
+.noticias table tr td div h4{
+    margin: 20px;
+    text-align: justify;
+    font-size: 130%;
+    font-weight: 700;
+    text-transform: uppercase
+}
+.noticias table tr:hover{
+    box-shadow: 0px 0px 5px #ff7f51;
+    cursor: pointer
+}
+
+/*-------------------------------SECTION QUIENES-----------------------------*/
+.informacion{
+    width: 80%;
+    background: #fff;
+    border: solid 0.5px #bfc0c0;
+    margin: 30px auto;
+    padding: 10px;
+    position: relative;
+}
+.informacion h2{
+    width: 90%;
+    margin: 20px auto;
+    padding: 0.3em;
+    text-align: center;
+    border-bottom: solid 0.2em #ff9770;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em
+}
+.informacion table{
+    width: 90%;
+    margin: 20px auto;
+}
+.cont-img-quien{
+    width: 55%
+}
+
+.informacion tr td img{
+    width: 100%
+}
+.informacion tr td p{
+    margin: 1em 1em;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 300
+}
+
+/*----------------------------------SECTION PUBLICIDAD---------------------------------------*/
+
+.publicidad{
+    width: 80%;
+    background: #fff;
+    border: solid 0.5px #bfc0c0;
+    margin: 30px auto;
+    padding: 10px;
+    position: relative;
+}
+.publicidad h2{
+    width: 90%;
+    margin: 20px auto;
+    padding: 0.3em;
+    text-align: center;
+    border-bottom: solid 0.2em #ff9770;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em
+}
+.publicidad table{
+    margin: 20px auto;
+}
+.publicidad table tr{
+    display: flex;
+}
+.publicidad table tr td{
+    display: flex;
+    align-items: center;
+}
+.publicidad table tr td img{
+    width: 15vw;
+    height: 15vh;
+}
+
+/*-------------------------Contenedor Generañ--------------------*/
+
+.contenedor-seccion{
+    width: 80%;
+    background: #fff;
+    border: solid 0.5px #bfc0c0;
+    margin: 50px auto 30px auto;
+    padding: 1em;
+    position: relative;
+}
+.contenedor-seccion h2{
+    width: 90%;
+    margin: auto;
+    padding: 0.3em;
+    text-align: center;
+    border-bottom: solid 0.2em #ff9770;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em
+}
+
+/*------------------------ ENLACE A ADOPCION REQUISITOS--------------------------*/
+.enlace-requisitos{
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center
+}
+.enlace-requisitos a{
+    text-decoration: none;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 0.5em 1.5em;
+    border-radius: 1.5em;
+    background: #e71d36;
+    color: #fff;
+    box-shadow: 0.2em 0.2em 0.2em #000
+}
+
+/*---------------------------IMPORTANCIA ADOPTAR------------------------*/
+.importancia-adoptar{
+    width: 90%;
+    margin: 20px auto;
+    padding: 0.1em 0
+}
+.importancia-adoptar ul{
+    text-align: justify;
+    font-size: 1.2em
+}
+.importancia-adoptar ul li{
+    margin: 1em auto;
+    list-style-type: circle
+}
+/*--------------------------SECTION ENCONTRA TU COMPAÑERO------------------------*/
+.encontra-tu-companero{
+    width: 90%;
+    margin: 20px auto;
+}
+.encontra-tu-companero tr{
+    display: flex;
+    height: 47vh;
+}
+.encontra-tu-companero tr td{
+    width: 25%;
+    padding: 1em;
+    font-size: 100%;
+    text-align: justify;
+    border: solid 0.5px #bfc0c0
+}
+.encontra-tu-companero-img{
+    width: 100%;
+    height: 60%;
+}
+/*------------------------- REQUISITOS DE ADOPCION -------------------------------*/
+
+.cont-requisitos{
+    width: 90%;
+    margin: 20px auto;
+}
+.cont-requisitos-img{
+    width: 30%;
+    padding: 1em
+}
+.cont-requisitos-img img{
+    width: 100%
+}
+.cont-requisitos-text{
+    padding: 0 1em;
+    text-align: justify;
+    font-size: 1.2em
+}
+.cont-requisitos-text ul li{
+    margin: 1.5em auto
+}
+
+/*--------------------------------------SECTION VETERINARIAS---------------------*/
+
+.veterinarias{
+    width: 90%;
+    margin: 20px auto;
+    border-spacing: 0;
+}
+.veterinarias tr th{
+    font-size: 1.3em;
+    font-weight: 900;
+    padding: 0.3em 0;
+    background: #f4978e
+}
+.veterinarias tr td{
+    font-size: 1.2em;
+    font-weight: 300;
+    text-align: center;
+    padding: 0.5em 0
+}
+.veterinarias tr:hover{
+    background: #fbc4ab;
+    
+}
+
+/*----------------------------------SECTION VOLUNTARIAD---------------------*/
+
+.voluntariado-p{
+    width: 80%;
+    margin: 0.5em auto;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 0.5em
+}
+.voluntariado-p h6{
+    font-size: 1.2em;
+    margin: 1em auto;
+    font-style: italic
+}
+.voluntario{
+    width: 80%;
+    margin: 1em auto;
+    padding: 2em;
+    font-size: 1.2em;
+    border: solid #dce1de 0.1em;
+    border-radius: 1em;
+    box-shadow: 0 0 0.5em #dce1de
+}
+.voluntario table{
+    width: 100%;
+    font-weight: 700;
+}
+.voluntario table tr td{
+    width: 50%;
+    padding: 0.5em
+}
+.voluntario table tr td input{
+    font-size: 1em;
+    text-align: center;
+    border: solid #4f5d75 1px
+}
+#fname, #lname{
+    width: 60%;
+}
+#dni{
+    width: 60%;
+}
+
+#registrar{
+    float: right;
+    margin: 1em auto;
+    padding: 0.5em 1em;
+    font-weight: 900;
+    background: #e71d36;
+    color: #fff;
+    box-shadow: 0.2em 0.2em 0.2em #000;
+    border: #e71d36 solid 0.1em
+}
+#reset{
+    float: left;
+    margin: 1em auto;
+    padding: 0.5em 1em;
+    font-weight: 900;
+    background: #e71d36;
+    color: #fff;
+    box-shadow: 0.2em 0.2em 0.2em #000;
+    border: #e71d36 solid 0.1em
+}
+
+
+/*---------------------------- NAV----------------------------------------*/
+.pie-pagina{
+    width: 100%;
+    background: #ff9770;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.pie-pagina address{
+    display: inline-block;
+    padding: 0.4em 4em;
+    font-weight: 700;
+    font-size: 1em
+}
+.pie-pagina p{
+    font-weight: 700;
+    font-size: 1em;
+}
+.pie-pagina ul{
+    display: inline-block;
+    padding: 0.3em 0
+}
+.pie-pagina ul li{
+    display: inline-block;
+    margin: auto 0.7em;
+    width: 2em;
+    height: 2em
+}
+.pie-pagina ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background: #fff;
+    border-radius: 5px
+}
+.icons{
+    padding: 5px;
+    font-size: 1.3em;
+    border-radius: 5px
+}
+.fa-facebook-square{
+    color: #0353a4
+}
+.fbicon:hover{
+    background: #0353a4;
+    color: #fff
+}
+.fa-instagram-square{
+    color: #4e148c
+}
+.igicon:hover{
+    background: #4e148c;
+    color: #fff
+}
+.fa-twitter-square{
+    color: #00a7e1
+}
+.twicon:hover{
+    background: #00a7e1;
+    color: #fff
+}
+.fa-whatsapp-square{
+    color: #08a045
+}
+.wppicon:hover{
+    background: #08a045;
+    color: #fff
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:500px){
+    
+    body{
+        margin: 0;
+        background: #fff4f0;
+        width: 100%;
+
+        background-image: url(../img/background/fondo.jpeg);
+        position: relative;
+
+    }
+    #encabezado{
+        width: 100wh;
+
+        padding: 1em 1em;
+        background-image: url(../img/header/encabezado2.jpg);
+        text-align: center;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    .title-encabezado{
+        text-transform: uppercase;
+        font-size: 1.3em;
+        font-family: 'Fredoka One', cursive;
+        letter-spacing: 4px;
+        text-shadow: 2px 2px 4px #000;
+        color: #fff;
+        position: relative;
+    }
+    #encabezado:before{
+        content: '';
+        position: absolute;
+        background-color: rgba( 0, 0, 0, 0.5 );
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+ 
+    /*------------------------- NAV -----------------------------------------*/
+
+    .nav-bar{
+        width: 100%;
+        height: 4em;
+        background: #ff9770;
+        position: relative;
+
+            /*#f9ba76*/
+    }
+    .nav-bar ul {
+      list-style-type: none;
+      margin: auto auto auto 1em;
+      padding: 0;
+    }
+    .nav-bar ul li{
+    }
+    .nav-bar ul li a {
+        display: inline-block;
+        padding: 0.7em;
+        text-align: center;
+        text-decoration: none;
+        color: ghostwhite;
+        font-size: 0.6em
+    }
+    .nav-bar ul li a:hover{
+        color: #000;
+        cursor: pointer
+    }
+    .enlaces:hover{
+        background: #ffab8c
+    }
+    .busc-conten{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .buscar-text{
+        display: inline-block;
+        border-radius: 40px;
+        font-size: 0.6em;
+        padding: 0 0.5em
+    }
+    .buscar-text:focus{
+        outline: none;
+        border: 2px solid grey;
+    }
+    .buscar-boton{
+        width: 1em;
+        display: inline-block;
+        color: #fff;
+        font-size: 100%
+    }
+    
+    /*----------------------------------- SECTION NOTICIAS ------------------------------------*/
+
+    .noticias{
+        width: 80%;
+        margin: 1em auto 0.3em auto;
+        background: #fff;
+        border: solid 0.5px #bfc0c0;
+        position: relative;
+    }
+    .noticias h2{
+        width: 90%;
+        margin: 0.3em auto;
+        text-align: center;
+        border-bottom: solid 0.2em #ff9770;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 0.5em
+    }
+    .noticias table{
+        width: 90%;
+        padding: 0;
+        margin: 0 auto
+    }
+
+    .noticias table tr{
+        display: flex;
+        box-shadow: 0.1em 0.1em 0.3em #000;
+        margin: 0.6em auto
+    }
+    .noticias table tr td{
+        display: flex;
+        padding: 0.3em
+    }
+
+    .noticias table tr td img, .noticias table tr td div{
+        display: inline-block;
+    }
+    .noticias table tr td img{
+        width: 24vw;
+        height: 10vh
+    }
+    .noticias table tr td div{
+        width: 80%;
+        padding: 0.2em
+    }
+    .noticias table tr td div h6{
+        text-align: left;
+        font-size: 0.2em;
+        font-weight: 500;
+        font-style: italic ;
+        margin: 0.2em
+    }
+    .noticias table tr td div h4{
+        text-align: justify;
+        font-size: 0.5em;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 0.3em auto
+    }
+    .noticias table tr:hover{
+        box-shadow: 0px 0px 5px #ff7f51;
+        cursor: pointer
+    }
+    
+    /*-------------------------------SECTION QUIENES-----------------------------*/
+    .informacion{
+        width: 80%;
+        background: #fff;
+        border: solid 0.5px #bfc0c0;
+        margin: 30px auto;
+        padding: 10px;
+        position: relative;
+    }
+    .informacion h2{
+        width: 90%;
+        margin: 0.3em auto;
+        text-align: center;
+        border-bottom: solid 0.2em #ff9770;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 0.5em
+    }
+    .informacion table{
+        width: 90%;
+        margin: 0.3em auto;
+    }
+    .cont-img-quien{
+        width: 55%
+    }
+
+    .informacion tr td img{
+        width: 100%
+    }
+    .informacion tr td p{
+        margin: 0.2em;
+        text-align: center;
+        font-size: 0.3em;
+        font-weight: 300
+    }
+    
+    /*----------------------------------SECTION PUBLICIDAD---------------------------------------*/
+
+    .publicidad{
+        width: 80%;
+        background: #fff;
+        border: solid 0.5px #bfc0c0;
+        margin: 30px auto;
+        padding: 10px;
+        position: relative;
+    }
+    .publicidad h2{
+        width: 90%;
+        margin: 0.3em auto;
+        padding: 0.3em;
+        text-align: center;
+        border-bottom: solid 0.2em #ff9770;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 0.5em
+    }
+    .publicidad table{
+        margin: 0.4em auto;
+    }
+    .publicidad table tr{
+        display: flex;
+    }
+    .publicidad table tr td{
+        display: flex;
+        align-items: center;
+    }
+    .publicidad table tr td img{
+        width: 14vw;
+        height: 7vh;
+    }
+    
+    /*-------------------------Contenedor General--------------------*/
+
+    .contenedor-seccion{
+        width: 80%;
+        background: #fff;
+        border: solid 0.5px #bfc0c0;
+        margin: 1em auto;
+        padding: 0.6em;
+        position: relative;
+    }
+    .contenedor-seccion h2{
+        width: 90%;
+        margin: 0.3em auto;
+        padding: 0.3em;
+        text-align: center;
+        border-bottom: solid 0.2em #ff9770;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 0.7em
+    }
+    
+    /*------------------------ ENLACE A ADOPCION REQUISITOS--------------------------*/
+    .enlace-requisitos{
+        width: 90%;
+        margin: 1em auto;
+        display: flex;
+        justify-content: center
+    }
+    .enlace-requisitos a{
+        text-decoration: none;
+        font-size: 0.7em;
+        text-align: center;
+        padding: 0.5em 1.5em;
+        border-radius: 1.5em;
+        background: #e71d36;
+        color: #fff;
+        box-shadow: 0.2em 0.2em 0.2em #000
+    }
+    
+    /*--------------------------SECTION ENCONTRA TU COMPAÑERO------------------------*/
+    .encontra-tu-companero{
+        width: 90%;
+        margin: 1em auto;
+    }
+    .encontra-tu-companero tr{
+        display: flex;
+        height: 20.2vh;
+    }
+    .encontra-tu-companero tr td{
+        width: 25%;
+        padding: 0.5em;
+        font-size: 0.4em;
+        text-align: justify;
+        border: solid 0.5px #bfc0c0
+    }
+    .encontra-tu-companero-img{
+        width: 100%;
+        height: 60%;
+    }
+
+    /*---------------------------IMPORTANCIA ADOPTAR------------------------*/
+    .importancia-adoptar{
+        width: 90%;
+        margin: 0.5em auto;
+        padding: 0.1em 0
+    }
+    .importancia-adoptar ul{
+        text-align: justify;
+        font-size: 0.4em
+    }
+    .importancia-adoptar ul li{
+        margin: 0.5em auto;
+        list-style-type: circle
+    }
+    
+    /*------------------------- REQUISITOS DE ADOPCION -------------------------------*/
+
+    .cont-requisitos{
+        width: 90%;
+        margin: 0.5em auto;
+    }
+    .cont-requisitos-img{
+        width: 30%;
+        padding: 0
+    }
+    .cont-requisitos-img img{
+        width: 25vw
+    }
+    .cont-requisitos-text{
+        text-align: justify;
+        font-size: 0.5em
+    }
+    .cont-requisitos-text ul li{
+        margin: 0.5em auto
+    }
+    
+    /*--------------------------------------SECTION VETERINARIAS---------------------*/
+
+    .veterinarias{
+        width: 90%;
+        margin: 0.5em auto;
+        border-spacing: 0;
+    }
+    .veterinarias tr th{
+        font-size: 0.5em;
+        font-weight: 900;
+        padding: 0.3em 0;
+        background: #f4978e
+    }
+    .veterinarias tr td{
+        font-size: 0.4em;
+        font-weight: 300;
+        text-align: center;
+        padding: 0.5em 0
+    }
+    .veterinarias tr:hover{
+        background: #fbc4ab;
+
+    }
+    
+    /*----------------------------------SECTION VOLUNTARIAD---------------------*/
+
+    .voluntariado-p{
+        width: 80%;
+        margin: 0.5em auto;
+        text-align: center;
+        font-size: 0.6em;
+        padding: 0.2em
+    }
+    .voluntariado-p h6{
+        font-size: 1.3em;
+        margin: 1em auto;
+        font-style: italic
+    }
+    .voluntario{
+        width: 90%;
+        margin: 0.5em auto;
+        padding: 0.4em;
+        font-size: 0.6em;
+        border: solid #dce1de 0.1em;
+        border-radius: 1em;
+        box-shadow: 0 0 0.5em #dce1de
+    }
+    .voluntario table{
+        width: 100%;
+        font-weight: 700;
+    }
+    .voluntario table tr td{
+        width: 50%;
+        padding: 0.5em
+    }
+    .voluntario table tr td input{
+        font-size: 1em;
+        text-align: center;
+        border: solid #4f5d75 1px
+    }
+    #fname, #lname{
+        width: 60%;
+    }
+    #dni{
+        width: 60%;
+    }
+
+    #registrar{
+        float: right;
+        margin: 1em auto;
+        padding: 0.5em 1em;
+        font-weight: 900;
+        background: #e71d36;
+        color: #fff;
+        box-shadow: 0.2em 0.2em 0.2em #000;
+        border: #e71d36 solid 0.1em
+    }
+    #reset{
+        float: left;
+        margin: 1em auto;
+        padding: 0.5em 1em;
+        font-weight: 900;
+        background: #e71d36;
+        color: #fff;
+        box-shadow: 0.2em 0.2em 0.2em #000;
+        border: #e71d36 solid 0.1em
+    }
+    
+    /*---------------------------- NAV----------------------------------------*/
+    .pie-pagina{
+        width: 100%;
+        background: #ff9770;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+    .pie-pagina address{
+        display: inline-block;
+        padding: 0.1em 0.1em;
+        font-weight: 700;
+        font-size: 0.5em
+    }
+    .pie-pagina p{
+        font-weight: 700;
+        font-size: 0.5em;
+        padding: 0 0 0 0.3em
+    }
+    .pie-pagina ul{
+        display: inline-block;
+        padding: 0.3em 0
+    }
+    .pie-pagina ul li{
+        display: inline-block;
+        margin: auto 0.1em;
+        width: 1em;
+        height: 1em
+    }
+    .pie-pagina ul li a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        background: #fff;
+        border-radius: 5px
+    }
+    .icons{
+        padding: 0.1em;
+        font-size: 1em;
+        border-radius: 0.2em
+    }
+    .fa-facebook-square{
+        color: #0353a4
+    }
+    .fbicon:hover{
+        background: #0353a4;
+        color: #fff
+    }
+    .fa-instagram-square{
+        color: #4e148c
+    }
+    .igicon:hover{
+        background: #4e148c;
+        color: #fff
+    }
+    .fa-twitter-square{
+        color: #00a7e1
+    }
+    .twicon:hover{
+        background: #00a7e1;
+        color: #fff
+    }
+    .fa-whatsapp-square{
+        color: #08a045
+    }
+    .wppicon:hover{
+        background: #08a045;
+        color: #fff
+    }
+}

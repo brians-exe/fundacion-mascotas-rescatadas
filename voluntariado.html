@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Gonzalez, Brian Leonel">
+        
+        <title>Voluntariado</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="font/fontawesome/css/all.css">
+        
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="icon" href="img/icon-page/voluntariado.png">
+        
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    </head>
+    
+    <body>
+
+        <header id="encabezado"> 
+            <h1 class="title-encabezado" >Fundación de<br> mascotas rescatadas</h1>
+        </header>
+        
+        <nav class="nav-bar">
+            <ul>
+                <li class="enlaces">
+                    <a href="index.html"><i class="fas fa-home"></i>&nbsp; Home</a>
+                </li>
+                <li class="enlaces">
+                    <a href="adopciones.html"><i class="fas fa-paw"></i>&nbsp; Adopciones</a>
+                </li>
+                <li class="enlaces">
+                    <a href="veterinarias.html"><i class="fas fa-user-md"></i>&nbsp; Veterinarias</a>
+                </li>
+                <li class="enlaces">
+                    <a href="voluntariado.html"><i class="far fa-address-card"></i>&nbsp; Voluntariado</a>
+                </li>
+                <li style="float: right" class="busc-conten">
+                    <input type="text" placeholder="Buscar..." class="buscar-text">
+                        <a class="buscar-boton">
+                            <i class="fas fa-search"></i>
+                        </a>
+                </li>
+            </ul>
+                   
+            
+        </nav>
+        
+        <section class="contenedor-seccion">
+            <h2>Voluntariado</h2>
+            <div class="voluntariado-p">
+                <p>
+                    Ya somo 156 participantes en esta causa.
+                </p>
+                <h6>¡Sumate vos también!</h6>
+            </div>
+            <form class="voluntario">
+                
+                <table>
+                    <tr>
+                        <td>
+                            <label for="fname">Nombre:</label>
+                            <input type="text" id="fname" name="fname" required placeholder="Ingrese su nombre">
+                        </td>
+                        <td>
+                            <label for="fecha-nac">Fecha de Nacimiento:</label>
+                            <input name="fecha-nac" id="fecha-nac" type="date" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="lname">Apellido:</label>
+                            <input type="text" id="lname" name="lname" required placeholder="Ingrese su apellido">
+                        </td>
+                        <td>
+                            <label for="sexo">Sexo:</label><br>
+                            <input name="sexo" id="masculino" type="radio" value="masculino" required>
+                            <label for="masculino">Masculino</label><br>
+                            <input name="sexo" id="femenino" type="radio" value="femenino" required>
+                            <label for="femenino">Femenino</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="dni">DNI:</label>
+                            <input type="number" id="dni" min="20000000" max="99000000" name="dni" placeholder="Ingrese su DNI" required>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="REGISTRARME" id="registrar">
+                        </td>
+                        <td>
+                            <input type="reset" value="RESTABLECER" id="reset">
+                        </td>
+                    </tr>
+                </table>
+            
+            </form>
+            
+        </section>
+        
+        <section class="publicidad">
+            <h2>Ellos también son parte de esta causa!</h2>
+            <table>
+                <tr>
+                    <td>
+                        <img src="img/publicidad/purina.png">
+                    </td>
+                    <td>
+                        <img src="img/publicidad/vet-cucho.jpg">
+                    </td>
+                    <td>
+                        <img src="img/publicidad/whiskas.png">
+                    </td>
+                    <td>
+                        <img src="img/publicidad/vet-lujan.png">
+                    </td>
+                    <td>
+                        <img src="img/publicidad/clinica-norte.png">
+                    </td>
+                </tr>
+            </table>
+        </section>
+        
+        <footer class="pie-pagina">
+            <address>Avda. Los Tulipanes N°3456 - Tel. 388 1234567</address>
+            <p>Contáctanos:</p>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank" class="fbicon">
+                        <i class="fab fa-facebook-square icons fbicon"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank" class="igicon">
+                        <i class="fab fa-instagram-square icons igicon"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/" target="_blank" class="twicon">
+                        <i class="fab fa-twitter-square icons twicon"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://api.whatsapp.com/send?phone=543881234567&text=" target="_blank">
+                        <i class="fab fa-whatsapp-square icons wppicon"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        
+    </body>
+</html>
